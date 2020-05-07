@@ -8,7 +8,7 @@
 num = 9808941
 message = "odd"
 
-if num % 2 == 0
+if num.even?
   message = "even"
 end
 
