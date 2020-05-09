@@ -11,6 +11,6 @@
 puts "What is the current rate?"
 rate = gets.to_f
 puts "How much money do you have?"
-sum = gets.to_i
+sum = gets.to_f
 converted_sum = (sum / rate).round(2)
-abort "Your savings are " + converted_sum.to_s
+abort "Your savings are " + converted_sum.to_s + "$"
