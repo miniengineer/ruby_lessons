@@ -20,7 +20,7 @@ length = gets.to_i
 
 array = Array.new
 while length > 0 do
-  array << rand(101)
+  array << rand(100)
   length -= 1
 end
 
