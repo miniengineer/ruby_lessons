@@ -21,8 +21,11 @@ array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
 
 def cut_array(num, array)
   if (num == nil || num.to_i < 0 || num.to_i.to_s != num)
-    puts "Please enter a valid integer!"
-    return
+    return "Please enter a valid integer!"
+  elsif (array.length < 0)
+    return "Please enter a valid array!"
+  elsif (num.to_i > array.length)
+    return "Number of slices must be less or equal than number of elements in array!"
   end
   array.take(num.to_i)
 end
