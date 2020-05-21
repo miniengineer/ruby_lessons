@@ -17,7 +17,7 @@ def find_radius (radius)
     puts "Please input a positive number!"
     return
   end
-  3.14 * radius.to_i
+  3.14 * radius.to_i * radius.to_i
 end
 
 puts "Input first circle radius:"
