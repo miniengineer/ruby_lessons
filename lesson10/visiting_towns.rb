@@ -17,6 +17,8 @@
 # Приехали в Рим
 # Пантеон, Собор Святого Петра, Колизей
 
+# Alternatively can use require_relative method
+# it search for the method in the relative folder
 require "./paris.rb"
 require "./london.rb"
 require "./rome.rb"
