@@ -15,12 +15,16 @@ def show_stars
   if (num == nil || num.to_i.to_s != num)
     return "Please input a valid number!"
   end
+
   num = num.to_i
   stars = ""
+  # Alternatively can use string length as indicator
+  # stars.length < num
   while num > 0 do
     stars += "*"
     num -= 1
   end
+
   stars
 end
 
