@@ -12,8 +12,13 @@ bridge = Bridge.new
 
 sleep 1
 
-bridge.open
+if !bridge.is_opened?
+  bridge.open
+end
 
 sleep 1
 
 puts "Continue our journey!"
+
+# check if the value of is_opened is still true
+puts bridge.is_opened?.to_s
