@@ -32,10 +32,10 @@ person3 = Human.new("Taro", "Yamada")
 person3.save_favorite_movie("Barry Levinson", "Rain man")
 
 puts person.get_fullname
-puts "with favorite movie: #{person.favorite_movie}"
+puts "with favorite movie: #{person.favorite_movie.title}"
 
 puts person2.get_fullname
-puts "with favorite movie: #{person2.favorite_movie}"
+puts "with favorite movie: #{person2.favorite_movie.title}"
 
 puts person3.get_fullname
-puts "with favorite movie: #{person3.favorite_movie}"
+puts "with favorite movie: #{person3.favorite_movie.title}"

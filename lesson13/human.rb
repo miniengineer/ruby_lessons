@@ -11,11 +11,11 @@ class Human
     @name + " " + @surname
   end
 
-  def save_favorite_movie(director, movie)
-    @favorite_movie = Movie.new(director, movie)
+  def save_favorite_movie(director, title)
+    @favorite_movie = Movie.new(director, title)
   end
 
   def favorite_movie
-    @favorite_movie.movie
+    @favorite_movie
   end
 end

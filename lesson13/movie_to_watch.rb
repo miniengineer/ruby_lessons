@@ -38,5 +38,5 @@ options = []
 }
 
 # A better way to get random element from array is to use .sample method
-puts "Today I recommend you to watch: #{options[rand(3)].movie}"
+puts "Today I recommend you to watch: #{options[rand(3)].title}"
 puts "Director: #{options[0].director}"

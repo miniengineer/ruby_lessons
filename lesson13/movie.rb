@@ -1,14 +1,14 @@
 class Movie
-  def initialize(director, movie)
+  def initialize(director, title)
     @director = director
-    @movie = movie
+    @title = title
   end
 
   def director
     @director
   end
 
-  def movie
-    @movie
+  def title
+    @title
   end
 end
