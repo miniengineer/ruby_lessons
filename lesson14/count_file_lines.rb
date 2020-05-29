@@ -27,7 +27,7 @@ if File.exists?(current_path)
   lines = f.readlines
   f.close
   empty_lines = 0
-  lines.each { |line| line.size < 2 ? empty_lines += 1 : nil }
+  lines.each { |line| line == "\n" ? empty_lines += 1 : nil }
   puts "Opened file: #{current_path}"
   puts "Total number of lines: #{lines.size}"
   puts "Empty lines: #{empty_lines}"
