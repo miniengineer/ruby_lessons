@@ -13,6 +13,7 @@ file = File.new(current_path + "/holidays.txt")
 holidays = file.readlines
 file.close
 
+# Alternatively could just use chomp! method in for loop
 holidays.map! { |line| line.chomp }
 
 today = Time.new
