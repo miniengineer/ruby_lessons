@@ -16,7 +16,7 @@
 puts "Enter an email address:"
 email = STDIN.gets.chomp
 
-if email =~ /^[a-z\d]+\@[a-z]+\.[a-z]+$/i
+if email =~ /^[a-z\d]+(\.[a-z\d]+)*\@[a-z]+\.[a-z]+$/i
   puts "Thank you!"
 else
   puts "What the heck? It's not a valid email address!"
