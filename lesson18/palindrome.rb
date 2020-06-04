@@ -6,6 +6,7 @@
 
 # Если не выйдет найти метод с пом. irb, погуглите или посмотрите документацию на класс String.
 
+# Alternatively could use .delete method
 word = STDIN.gets.chomp.downcase.tr(" ,.!?:;", "")
 reversed_word = word.reverse
 
