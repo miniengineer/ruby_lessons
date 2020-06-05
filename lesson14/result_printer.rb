@@ -9,11 +9,11 @@ class ResultPrinter
     while counter <= 7 do
       file_name = current_path + "/viselitsa_data/images/#{counter}.txt"
       
-      if File.exist?(file_name)
+      begin
         f = File.new(file_name)
         @status_image << f.read
         f.close
-      else
+      rescue SystemCallError
         @status_image << "\n[Image not found]\n"
       end
 

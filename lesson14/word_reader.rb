@@ -7,7 +7,7 @@ class WordReader
       lines = f.readlines
       f.close
       return lines.sample.chomp
-    rescue Errno::ENOENT => error
+    rescue SystemCallError => error
       abort error.message
     end
   end
