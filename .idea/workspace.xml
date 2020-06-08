@@ -19,7 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5e4cbd7-ed65-4cd8-a7d6-d367e84499a4" name="Default Changelist" comment="" />
+    <list default="true" id="f5e4cbd7-ed65-4cd8-a7d6-d367e84499a4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rubytut_2/lesson2/pick_a_card.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rubytut_2/lesson2/pick_a_card.rb" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,6 +40,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -45,11 +49,12 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/rubytut_2/lesson1" />
+      <recent name="$PROJECT_DIR$/rubytut_1" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/rubytut_2/viselitsa_v3" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/rubytut_1" />
     </key>
   </component>
   <component name="RunManager">
@@ -88,7 +93,7 @@
       <workItem from="1591586001325" duration="169000" />
       <workItem from="1591595397292" duration="381000" />
       <workItem from="1591595870025" duration="364000" />
-      <workItem from="1591596250220" duration="808000" />
+      <workItem from="1591596250220" duration="2188000" />
     </task>
     <servers />
   </component>
@@ -112,8 +117,24 @@
       <screen x="0" y="23" width="1440" height="808" />
     </state>
     <state x="603" y="270" width="591" height="395" key="#Notifications/0.23.1440.808@0.23.1440.808" timestamp="1591596219132" />
+    <state width="1398" height="203" key="GridCell.Tab.0.bottom" timestamp="1591598035395">
+      <screen x="0" y="23" width="1440" height="808" />
+    </state>
+    <state width="1398" height="203" key="GridCell.Tab.0.bottom/0.23.1440.808@0.23.1440.808" timestamp="1591598035395" />
+    <state width="1398" height="203" key="GridCell.Tab.0.center" timestamp="1591598035393">
+      <screen x="0" y="23" width="1440" height="808" />
+    </state>
+    <state width="1398" height="203" key="GridCell.Tab.0.center/0.23.1440.808@0.23.1440.808" timestamp="1591598035393" />
+    <state width="1398" height="203" key="GridCell.Tab.0.left" timestamp="1591598035392">
+      <screen x="0" y="23" width="1440" height="808" />
+    </state>
+    <state width="1398" height="203" key="GridCell.Tab.0.left/0.23.1440.808@0.23.1440.808" timestamp="1591598035392" />
+    <state width="1398" height="203" key="GridCell.Tab.0.right" timestamp="1591598035394">
+      <screen x="0" y="23" width="1440" height="808" />
+    </state>
+    <state width="1398" height="203" key="GridCell.Tab.0.right/0.23.1440.808@0.23.1440.808" timestamp="1591598035394" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/rubytut@pick_a_card.rcov" NAME="pick_a_card Coverage Results" MODIFIED="1591597215296" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/rubytut_2/lesson2" MODULE_NAME="rubytut" />
+    <SUITE FILE_PATH="coverage/rubytut@pick_a_card.rcov" NAME="pick_a_card Coverage Results" MODIFIED="1591598033111" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/rubytut_2/lesson2" MODULE_NAME="rubytut" />
   </component>
 </project>
