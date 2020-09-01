@@ -1,2 +1,15 @@
 class Book < Item
+  attr_reader :title, :genre, :author
+
+  def initialize(params)
+    super
+
+    @title = params[:title]
+    @genre = params[:genre]
+    @author = params[:author]
+  end
+
+  def to_s
+    "Book '#{@title}', #{@genre}, author - #{@author}, $#{@price}. (only #{@stock} left)"
+  end
 end
