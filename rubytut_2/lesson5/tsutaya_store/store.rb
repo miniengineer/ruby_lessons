@@ -30,7 +30,18 @@
 # Фильм «Дурак», 2014, реж. Юрий Быков, 390 руб. (осталось 1)
 # Книга «Идиот», роман, автор — Федор Достоевский, 1500 руб. (осталось 10)
 
+# Магазин с сеттерами и update
+# Продолжаем развивать наш «Магазин»: допишите важные методы для изменения экземпляров классов Book и Film.
 
+# Сделайте так, чтобы у любого продукта можно было поменять внутреннюю переменную экземпляра, например, вот так:
+
+# product = Film.new(title: 'Леон', director: 'Люк Бессон', price: 990)
+
+# product.year = 1994
+# product.amount = 5
+# или так:
+
+# product.update(year: 1994, amount: 5)
 
 
 require_relative 'Item'
@@ -38,6 +49,11 @@ require_relative 'Movie'
 require_relative 'Book'
 
 leon = Movie.new(price: 5, stock: 1, title: 'Leon', director: 'Luke Besson', release_date: 1994)
-puts "Leon movie costs #{leon.price}"
 
 b = Book.new(price: 5, stock: 10, title: "Harry Potter", genre: "adventure", author: "J.K. Rowling")
+
+puts b.to_s
+
+b.title = "Harry Potter and the Goblet of Fire"
+
+puts b.to_s

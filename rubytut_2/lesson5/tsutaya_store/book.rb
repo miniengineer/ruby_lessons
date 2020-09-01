@@ -1,5 +1,5 @@
 class Book < Item
-  attr_reader :title, :genre, :author
+  attr_accessor :title, :genre, :author
 
   def initialize(params)
     super
