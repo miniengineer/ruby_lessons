@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Book < Item
   attr_accessor :title, :genre, :author
 

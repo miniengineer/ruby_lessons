@@ -1,4 +1,4 @@
-require 'pry'
+# frozen_string_literal: true
 
 class Movie < Item
   attr_accessor :title, :release_date, :director
