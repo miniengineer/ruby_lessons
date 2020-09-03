@@ -43,6 +43,29 @@
 
 # product.update(year: 1994, amount: 5)
 
+# Магазин с чтением из файлов
+# Продолжаем развивать наш «Магазин»: реализуйте функционал считывания продуктов из папки data.
+# Пусть в папке, например, data/films лежат текстовые файлы в формате, который вам уже знаком (добавляется цена и остаток на складе):
+
+# Название фильма
+# Фамилия и имя режиссера
+# Год выхода
+# Цена
+# Остаток
+# А в папке data/books — файлы в таком формате:
+
+# Название книги
+# Жанр
+# Фамилия и имя автора
+# Цена
+# Остаток
+# Напишите для каждого класса-ребенка метод класса (статический метод) from_file,
+# который создает новый экземпляр класса, заполняя его данными из файла, чтобы можно было написать вот так:
+
+# film = Film.from_file('./data/films/01.txt')
+# book = Book.from_file('./data/books/01.txt')
+# Сделайте также, чтобы метод родителя возвращал ошибку NotImplementedError, на случай,
+# если какой-то ребенок попытается создать себя используя статический метод родителя.
 
 require_relative 'Item'
 require_relative 'Movie'
@@ -52,8 +75,8 @@ leon = Movie.new(price: 5, stock: 1, title: 'Leon', director: 'Luke Besson', rel
 
 b = Book.new(price: 5, stock: 10, title: "Harry Potter", genre: "adventure", author: "J.K. Rowling")
 
-puts b.to_s
+m = Movie.from_file('/data/movies/movie_1.txt')
+b = Book.from_file('/data/books/book.txt')
 
-b.title = "Harry Potter and the Goblet of Fire"
+puts b.title
 
-puts b.to_s
