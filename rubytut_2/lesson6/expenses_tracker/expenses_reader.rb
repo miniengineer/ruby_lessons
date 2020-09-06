@@ -8,7 +8,7 @@ abort 'File not found' unless File.exists? file_name
 
 file = File.new(file_name)
 
-doc = REXML:: Document.new(file)
+doc = REXML::Document.new(file)
 
 expenses_by_day = Hash.new
 
