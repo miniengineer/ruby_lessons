@@ -67,16 +67,30 @@
 # Сделайте также, чтобы метод родителя возвращал ошибку NotImplementedError, на случай,
 # если какой-то ребенок попытается создать себя используя статический метод родителя.
 
-require_relative 'Item'
-require_relative 'Movie'
-require_relative 'Book'
+# Магазин с ProductCollection
+# Продолжаем развивать наш «Магазин»: реализуйте класс ProductCollection,
+# который может хранить в себе любые товары (фильмы или книги) и у которого есть:
 
-leon = Movie.new(price: 5, stock: 1, title: 'Leon', director: 'Luke Besson', release_date: 1994)
+# Метод класса (статический метод) from_dir, который считывает продукты из папки data, сам понимая,
+# какие товары в какой папке лежат.
 
-b = Book.new(price: 5, stock: 10, title: "Harry Potter", genre: "adventure", author: "J.K. Rowling")
+# Метод экземпляра to_a, который возвращает массив товаров.
 
-m = Movie.from_file('/data/movies/movie_1.txt')
-b = Book.from_file('/data/books/book.txt')
+# Метод экземпляра sort, который сортирует товары по цене,
+# остатку на складе или по названию
+# (как по возрастанию, так и по убыванию):
 
-puts b.title
+# Создайте в основной программе коллекцию товаров, прочитав её из директории и выведите все товары на экран.
 
+require_relative 'item'
+require_relative 'movie'
+require_relative 'book'
+require_relative 'product_collection'
+
+c = ProductCollection.from_dir(File.dirname(__FILE__) + '/data')
+
+c.sort!(by: :price, order: :asc)
+
+c.to_a.each do |product|
+  puts product
+end
