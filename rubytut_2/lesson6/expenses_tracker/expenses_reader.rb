@@ -39,7 +39,7 @@ end
 
 # display summary of all expenses for the first month
 
-puts "------ #{current_month}, total expenses: $#{expenses_by_month[current_month]} ------"
+puts "------ [#{current_month}, total expenses: $#{expenses_by_month[current_month]}] ------"
 
 # list all expenses for all days in the current month
 expenses_by_day.keys.sort.each do |key|
@@ -48,7 +48,7 @@ expenses_by_day.keys.sort.each do |key|
   if key.strftime('%B %Y') != current_month
     current_month = key.strftime('%B %Y')
 
-    puts "------ #{current_month}, total expenses: $#{expenses_by_month[current_month]} ------"
+    puts "------ [#{current_month}, total expenses: $#{expenses_by_month[current_month]}] ------"
   end
 
   # key is instance of Date class
