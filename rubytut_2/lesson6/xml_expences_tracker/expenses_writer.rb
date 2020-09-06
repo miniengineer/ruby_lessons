@@ -1,6 +1,16 @@
 require 'rexml/document'
 require 'date'
 
+current_path = File.dirname(__FILE__)
+file_name = current_path + '/my_expenses.xml'
+
+abort 'File not found' unless File.exists? file_name
+
+# don't forget to specify that we need to read the file in UTF-8 encoding
+file = File.new(file_name, 'r:UTF-8')
+doc = REXML::Document.new(file)
+file.close
+
 puts 'Please enter item you spent the money on'
 expense_item = STDIN.gets.chomp
 
@@ -21,16 +31,6 @@ end
 
 puts 'What is the category for the expense?'
 expense_category = STDIN.gets.chomp
-
-current_path = File.dirname(__FILE__)
-file_name = current_path + '/my_expenses.xml'
-
-abort 'File not found' unless File.exists? file_name
-
-# don't forget to specify that we need to read the file in UTF-8 encoding
-file = File.new(file_name, 'r:UTF-8')
-doc = REXML::Document.new(file)
-file.close
 
 # save root tag
 expenses = doc.elements.find('expenses').first
