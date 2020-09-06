@@ -1,6 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?> 
 <wishes>
   <wish deadline='2020-12-31'>
-    Master Ruby on Rails
+     Master Ruby on Rails 
+  </wish>
+  <wish deadline='2021-06-01'>
+    Master Object Oriented Design
   </wish>
 </wishes>

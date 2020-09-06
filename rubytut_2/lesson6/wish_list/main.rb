@@ -24,9 +24,19 @@ require 'date'
 current_path = File.dirname(__FILE__)
 file_name = current_path + '/wish_list.xml'
 
-abort 'File not found' unless File.exists? file_name
+unless File.exists? file_name
+  # With no associated block, File.open is a synonym for ::new.
+  # If the optional code block is given, it will be passed the opened file as an argument
+  # and the File object will automatically be closed when the block terminates.
+  # The value of the block will be returned from File.open.
+  File.open(file_name, 'w:UTF-8') do |file|
+    file.puts "<?xml version='1.0' encoding='UTF-8'?>"
+    file.puts '<wishes></wishes>'
+  end
+end
 
-f = File.new(file_name, 'r:UFT-8')
+# don't need to close file, since we are just reading it
+f = File.read(file_name, encoding: 'UFT-8')
 
 begin
   doc = REXML::Document.new(f)
@@ -34,8 +44,6 @@ rescue REXML::ParseException => e
   puts 'Invalid XML file'
   abort e.message
 end
-
-f.close
 
 puts 'This list contains all your wishes.'
 
