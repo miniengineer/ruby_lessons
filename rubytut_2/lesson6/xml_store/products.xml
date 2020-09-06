@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<products>
+  <book>
+    <title>Harry Potter</title>
+    <author>J.K. Rowling</author>
+    <price>$20</price>
+    <amount>10</amount>
+  </book>
+  <book>
+    <title>Gone with the wind</title>
+    <author>Margaret Mitchell</author>
+    <price>$15</price>
+    <amount>5</amount>
+  </book>
+  <movie>
+    <title>House of Cards</title>
+    <director>Netflix</director>
+    <price>$25</price>
+    <amount>7</amount>
+  </movie>
+  <movie>
+    <title>Super 8</title>
+    <director>J.J. Abrams</director>
+    <price>$12</price>
+    <amount>30</amount>
+  </movie>
+</products>
