@@ -8,7 +8,14 @@ abort 'File not found' unless File.exists? file_name
 
 # don't forget to specify that we need to read the file in UTF-8 encoding
 file = File.new(file_name, 'r:UTF-8')
-doc = REXML::Document.new(file)
+
+begin
+  doc = REXML::Document.new(file)
+rescue REXML::ParseException => e
+  puts 'Invalid xml file'
+  abort e.message
+end
+
 file.close
 
 puts 'Please enter item you spent the money on'
