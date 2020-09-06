@@ -13,6 +13,10 @@
 # А этим желаниям ещё предстоит сбыться
 # 08.03.2018: Сделать курс по Node.JS
 
+# TODO
+# rewrite implementation with OOP
+# make Wish a class
+
 require 'rexml/document'
 require 'date'
 
